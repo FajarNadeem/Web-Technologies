@@ -5,69 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
-        h3 {
-            width: 500px;
-            margin-left: 200px;
-            margin-top: 100px;
-            align-items: center;
-        }
-        .heads {
-            margin-left: 200px;
-            align-items: center;
-            border: 0px;
-            margin: 0px;
-            padding: 0px;
-        }
         body {
-            background-color: #b7ccc6; 
+            background-color: #c8d6d2;
+            /* font-family: Arial, sans-serif; */
+            margin: 0;
+            padding: 0;
         }
-        nav {
+        .navbar {
             display: flex;
-            padding: 0px;
-            justify-content: space-evenly;
+            justify-content: space-evenly ;
             align-items: center;
+            background: #b7ccc6;
+            padding: 1em;
             border-radius: 100px;
+            margin-bottom: 20px;
+            /* margin-right: 10px;
+            margin-left: 10px; */
         }
         .navbar a {
             text-decoration: none;
             color: black;
-        }
-        li {
-            text-decoration: none;
-            display: flex;
-            justify-content: space-evenly;
-            padding: 20px;
-        }
-        ul {
-            text-decoration: none;
-            display: flex;
-        }
-        .para {
-            width: 300px;
-            padding: 0px;
-            margin: 0px;
-            display: flex;
+            padding: 0.5em 1em;
         }
         .navbar a:hover {
-            color: #967c87;
+            color: #727171;
         }
         .material {
-            margin-left: 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 125px;
+            margin-top: -70px;
+        }
+        .text-content {
+            max-width: 600px;
+            margin-top: -50px;
+        }
+        .text-content h3 {
             margin-top: 100px;
         }
-        .mypic {
-            width: 230px;
-            height: 230px;
-            border-radius: 200px;
-            margin-left: 300px;
-            margin-top: -70px;
-            border: #000000;
-            border-width: 100px;
-        }
         .btn-container {
-            /* display: flex;
-            justify-content: center;
-            align-items: center; */
             margin-top: 20px;
         }
         .btn {
@@ -76,54 +55,43 @@
             border-radius: 2em;
             background-color: #ba9da9;
             text-decoration: none;
-            /* color: black; */
+            color: black;
             cursor: pointer;
-            /* width: 10em;
-            height: 3em;
-            border-radius: 2em;
-            cursor: pointer; */
-            /* display: flex;
-            justify-content: center;
-            align-items: center; */ */
         }
         .btn:hover {
             box-shadow: 0px 0px 10px #000000;
             color: rgb(255, 248, 248);
         }
-        .imgpara {
-            display: flex;
+        .mypic {
+            width: 230px;
+            height: 230px;
+            border-radius: 200px;
+            margin-right: 30px;
+    margin-top: 50px;
         }
-        .pix {
-            margin-left: -124px;
-        }
+
     </style>
 </head>
 <body>
     <div class="navbar">
-        <nav>
-            <ul>
-                <li><a href="#">Skills</a></li>
-                <li><a href="public/projects.html">Projects</a></li>
-                <li><a href="#">Achievements</a></li>
-                <li><a href="public/about.html">About Us</a></li>
-                <li><a href="public/contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+        <a href="#">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact Me</a>
     </div>
     <div class="material">
-        <h3 class="heads">Hi! I am FAJAR NADEEM.</h3>
-        <h1 class="heads">Web Developer</h1> 
-        <section class="imgpara">
-            <div class="para">
-                <p>A software engineer specialised in creating amazing and responsive websites using WordPress, HTML, CSS, and JavaScript. With an experience of 2 years, we can make websites according to user requirements. Client satisfaction is our priority. Hire now for amazing services.</p>
-            </div>
+        <div class="text-content">
+            <h3>Hi! I am FAJAR NADEEM.</h3>
+            <h1>Web Developer</h1>
+            <p>A software engineer specialised in creating amazing and responsive websites using WordPress, HTML, CSS, and JavaScript. With an experience of 2 years, we can make websites according to user requirements. Client satisfaction is our priority. Hire now for amazing services.</p>
             <div class="btn-container">
-                <a href="public/contact.html"><button class="btn">Hire Now</button></a>
+                <a href="public/contact.html" class="btn">Hire Now</a>
             </div>
-            <div class="pix">
-                <img class="mypic" src="../mypic3.jpeg" alt="">
-            </div>
-        </section>
+        </div>
+        <div class="pix">
+            <img class="mypic" src="../mypic3.jpeg" alt="Profile Picture">
+        </div>
     </div>
+
 </body>
 </html>
